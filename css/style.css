@@ -72,7 +72,6 @@ section {
   display: flex;
   flex-flow: column;
   gap: 10px;
-  font-weight: bold;
 }
 
 .l_top_news_important {
