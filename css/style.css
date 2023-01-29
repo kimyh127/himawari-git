@@ -215,7 +215,8 @@ td {
   height: 22px;
   position: relative;
   z-index: var(--z-index-menu);
-  
+}
+
 .m_hamburger-bar {
   width: 100%;
   height: 2px;
