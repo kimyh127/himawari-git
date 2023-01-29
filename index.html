@@ -10,7 +10,10 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -18,8 +21,93 @@
 </html>
 
 <body>
+  <header class="l_header">
+    <div class="l_header_container">
+      <div class="l_header_title">
+        <div class="l_header_title_icon">
+          <img src="img/header_logo.jpg" alt="" class="l_header_title_icon-img">
+        </div>
+        <div class="l_header_title_wrapper">
+          <h1 class="l_header_title_txt">ひまわり子ども病院</h1>
+        </div>
+      </div>
+      <div class="l_header_nav">
+        <div class="l_header_nav_icon">
+          <img src="img/tel_logo.jpg" alt="" class="l_header_nav_icon-img">
+        </div>
+        <button class="m_hamburger">
+          <span class="m_hamburger-bar"></span>
+          <span class="m_hamburger-bar"></span>
+          <span class="m_hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="l_kv">
+    <div class="l_kv_container">
+      <div class="l_kv_img_wrapper">
+        <img src="img/kv_img.jpg" alt="" class="l_kv_img">
+      </div>
+      <div class="l_kv_txt_wrapper">
+        <p class="l_kv_txt">子供のための<br>子ども病院</p>
+      </div>
+    </div>
+  </div>
+
+
   <main>
-    <section class="l_top_news">
+    <section class="m_main_contents top_practice-time" id="section1" >
+      <div class="m_section_container ">
+        <div class="m_section_title_wrapper">
+          <p class="m_section_title_txt">診療時間</p>
+          <p class="m_section_title_sub">／　PRACTICE TIME</p>
+        </div>
+        <table class="m_tabele_wrapper">
+          <tr class="m_table_tr">
+            <th class="m_tabel_th"></th>
+            <td class="m_table_th">月</td>
+            <td class="m_table_th">火</td>
+            <td class="m_table_th">水</td>
+            <td class="m_table_th">木</td>
+            <td class="m_table_th">金</td>
+            <td class="m_table_th">土</td>
+            <td class="m_table_th">日/祝 </td>
+          </tr>
+          <tr class="m_table_tr">
+            <th class="m_tabel_th">9:00~18:00</th>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">× </td>
+          </tr>
+          <tr class="m_table_tr">
+            <th class="m_tabel_th">9:00~18:00</th>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">×</td>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">〇</td>
+            <td class="m_table_th">×</td>
+            <td class="m_table_th">×</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="l_top_news u_picture_relative">
+      <span class="u_circle"></span>
+      <div class="u_flower">
+        <div class="u_flower_container"></div>
+        <span class="u_flower_center"></span>
+        <span class="u_flower_triangle u_flower_triangle01"></span>
+        <span class="u_flower_triangle u_flower_triangle02"></span>
+        <span class="u_flower_triangle u_flower_triangle03"></span>
+        <span class="u_flower_triangle u_flower_triangle04"></span>
+      </div>
+      <span class="u_flower_stem"></span>
       <div class="l_top_news_letter">
         <div class="l_top_news_title">
           <h1>お知らせ</h1>
@@ -79,13 +167,14 @@
         </div>
       </a>
     </section>
-    <section>
+    <section class="m_main_contents u_picture_relative">
+      <span class="u_background-line u_background-line01"></span>
       <h1 class="l_section_title">診療科・診療部門</h1>
       <p lang="en" class="l_section_sub-title">DIAGNOSIS</p>
       <div class="m_list_box">
         <a href="index.html">
           <div class="m_item">
-            <img src="img/病院.jpg" alt="病院の写真" />
+            <img src="img/hospital_image.jpg" alt="病院の写真" />
             <div class="m_item_txt">
               <h1>診療部門</h1>
             </div>
@@ -93,7 +182,7 @@
         </a>
         <a href="index.html">
           <div class="m_item">
-            <img src="img/病院.jpg" alt="病院の写真" />
+            <img src="img/hospital_image.jpg" alt="病院の写真" />
             <div class="m_item_txt">
               <h1>診療部門</h1>
             </div>
@@ -101,7 +190,7 @@
         </a>
         <a href="index.html">
           <div class="m_item">
-            <img src="img/病院.jpg" alt="病院の写真" />
+            <img src="img/hospital_image.jpg" alt="病院の写真" />
             <div class="m_item_txt">
               <h1>診療部門</h1>
             </div>
@@ -109,13 +198,14 @@
         </a>
       </div>
     </section>
-    <section class="l_top_recruit">
+    <section class="l_top_recruit u_picture_relative">
+      <span class="u_background-line u_background-line03"></span>
       <h1 class="l_section_title">採用情報</h1>
       <p lang="en" class="l_section_sub-title">RECRUIT</p>
       <div class="m_list_box recruit_list_box">
         <a href="index.html">
           <div class="m_item recruit_item">
-            <img src="img/病院.jpg" alt="病院の写真" />
+            <img src="img/hospital_image.jpg" alt="病院の写真" />
             <div class="m_item_txt recruit_item_txt">
               <h1>医師・スタッフ募集</h1>
             </div>
@@ -123,7 +213,7 @@
         </a>
         <a href="index.html">
           <div class="m_item recruit_item">
-            <img src="img/病院.jpg" alt="病院の写真" />
+            <img src="img/hospital_image.jpg" alt="病院の写真" />
             <div class="m_item_txt recruit_item_txt">
               <h1>医師・スタッフ募集</h1>
             </div>
@@ -131,7 +221,7 @@
         </a>
         <a href="index.html">
           <div class="m_item recruit_item">
-            <img src="img/病院.jpg" alt="病院の写真" />
+            <img src="img/hospital_image.jpg" alt="病院の写真" />
             <div class="m_item_txt recruit_item_txt">
               <h1>医師・スタッフ募集</h1>
             </div>
@@ -140,4 +230,11 @@
       </div>
     </section>
   </main>
+  <footer class="l_footer">
+    <div class="l_footer_container">
+      <div class="l_footer_txt_container">
+        <p class="l_footer_txt">©︎ copyright himawri child hospital</p>
+      </div>
+    </div>
+  </footer>
 </body>
