@@ -28,7 +28,6 @@ body {
   font-family: vdl-pengentle, sans-serif;
   font-weight: normal;
   width: 100%;
-  overflow-x: hidden;
 }
 
 a {
@@ -216,8 +215,7 @@ td {
   height: 22px;
   position: relative;
   z-index: var(--z-index-menu);
-}
-
+  
 .m_hamburger-bar {
   width: 100%;
   height: 2px;
@@ -296,6 +294,14 @@ td {
 
 .u_picture_relative {
   position: relative;
+  overflow: hidden;
+  padding: 80  4%;
+  margin: 0;
+  width: 100%;
+}
+
+.u_picture_relative02{
+  position: relative;
 }
 
 .u_circle {
@@ -318,10 +324,6 @@ td {
   bottom: 10%;
   right: -45%;
   z-index: -1;
-}
-
-.u_flower_container {
-  position: relative;
 }
 
 .u_flower_center {
@@ -368,11 +370,23 @@ td {
   transform: translate(-50%, -50%) rotate(-52deg);
 }
 
+.u_flower_leaf{
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: -32%;
+  right: 0%;
+  background:rgba(95, 172, 83, 0.73) ;
+  border-radius: 18% 82% 5% 95% / 17% 94% 6% 83% ;
+  z-index: -2;
+}
+
 .u_flower_stem {
   display: block;
   position: absolute;
   bottom: -75%;
-  right: -5%;
+  right: 0%;
   width: 4%;
   height: 100%;
   background: rgba(95, 172, 83, 0.73);
@@ -381,7 +395,7 @@ td {
 
 .u_background-line {
   display: block;
-  width: 215%;
+  width: 100%;
   height: 160px;
   z-index: -1;
   position: absolute;
@@ -391,20 +405,16 @@ td {
 
 .u_background-line01 {
   display: block;
-  width: 215%;
-  height: 160px;
   background: linear-gradient(to right, #cfe2d1, #a7defd);
   z-index: -1;
   position: absolute;
   top: 16%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(50deg);
+  transform: translate(-50%, -50%) skewY(46deg);
 }
 
 .u_background-line02 {
   display: block;
-  width: 215%;
-  height: 160px;
   background: linear-gradient(to right, #cfe2d1, #a7defd);
   z-index: -1;
   position: absolute;
@@ -415,14 +425,12 @@ td {
 
 .u_background-line03 {
   display: block;
-  width: 215%;
-  height: 160px;
   background: rgba(242, 203, 5, 0.3);
   z-index: -1;
   position: absolute;
   top: 16%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(50deg);
+  transform: translate(-50%, -50%) skewY(46deg);
 }
 
 /* top */
