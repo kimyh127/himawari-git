@@ -30,7 +30,7 @@ body {
   font-weight: normal;
   width: 100%;
   height: 100vh;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 section {
@@ -111,6 +111,7 @@ th, td {
 .m_item {
   position: relative;
   border: solid 10px #e6e6e6;
+  overflow: hidden;
 }
 
 .m_list_box > a:not(:first-child) {
@@ -196,6 +197,7 @@ th, td {
   height: 22px;
   position: relative;
   z-index: var(--z-index-menu);
+
   }
   
   .m_hamburger-bar {
@@ -293,6 +295,14 @@ th, td {
 /* utility */
 .u_picture_relative{
   position: relative;
+  overflow: hidden;
+  padding: 80  4%;
+  margin: 0;
+  width: 100%;
+}
+
+.u_picture_relative02{
+  position: relative;
 }
 
 .u_circle{
@@ -317,9 +327,10 @@ th, td {
   z-index: -1;
 }
 
-.u_flower_container{
+/* .u_flower_container{
   position: relative;
-}
+  overflow: hidden;
+} */
 
 .u_flower_center{
   display: block;
@@ -364,11 +375,23 @@ opacity: 0.3;
   transform: translate(-50%, -50%) rotate(-52deg);
 }
 
+.u_flower_leaf{
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: -32%;
+  right: 0%;
+  background:rgba(95, 172, 83, 0.73) ;
+  border-radius: 18% 82% 5% 95% / 17% 94% 6% 83% ;
+  z-index: -2;
+}
+
 .u_flower_stem{
   display: block;
   position: absolute;
   bottom: -75%;
-  right: -5%;
+  right: 0%;
   width: 4%;
   height: 100%;
   background:rgba(95, 172, 83, 0.73) ;
@@ -377,7 +400,7 @@ opacity: 0.3;
 
 .u_background-line{
   display: block;
-  width: 215%;
+  width: 100%;
   height: 160px;
   z-index: -1;
   position: absolute;
@@ -387,19 +410,15 @@ opacity: 0.3;
 
 .u_background-line01{
   display: block;
-  width: 215%;
-  height: 160px;
   background: linear-gradient(to right,#CFE2D1,#A7DEFD);
   z-index: -1;
   position: absolute;
   top: 16%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(50deg);
+  transform: translate(-50%, -50%) skewY(46deg);
 }
 .u_background-line02{
   display: block;
-  width: 215%;
-  height: 160px;
   background: linear-gradient(to right,#CFE2D1,#A7DEFD);
   z-index: -1;
   position: absolute;
@@ -409,14 +428,12 @@ opacity: 0.3;
 }
 .u_background-line03{
   display: block;
-  width: 215%;
-  height: 160px;
   background: rgba(242, 203, 5,0.3);
   z-index: -1;
   position: absolute;
   top: 16%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(50deg);
+  transform: translate(-50%, -50%) skewY(46deg);
 }
 
 
