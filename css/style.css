@@ -52,6 +52,15 @@ section {
   margin: 80px auto 0;
 }
 
+img {
+  height: auto;
+  vertical-align: top;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
 th,
 td {
   border: 1px solid #333;
@@ -182,20 +191,45 @@ td {
 
 .l_kv_img_wrapper {
   width: 80vw;
+  height: 90vh;
   margin-left: auto;
 }
 
 .l_kv_txt_wrapper {
   position: absolute;
-  top: 55%;
+  top: 50%;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 4vw;
+}
+
+@media screen and (min-width: 768px) {
+.l_kv_txt_wrapper{
+  top: 29%;
+  left: 10%;
+}
 }
 
 .l_kv_txt {
   font-size: 30px;
 }
 
+@media screen and (min-width: 768px) {
+.l_kv_txt{
+  font-size: 60px;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+.l_responsive_conttainer{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding: 80  4%;
+  margin: 0;
+  width: 100%;
+}
+}
 .l_footer {
   width: 100%;
   height: 10%;
@@ -258,6 +292,7 @@ td {
 
 .m_section_title_wrapper {
   display: flex;
+  margin-bottom: 24px;
 }
 
 .m_section_title_txt {
@@ -268,12 +303,43 @@ td {
   margin-top: auto;
 }
 
+.m_practice-time-container{
+  background: #f8f8f8;
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .m_practice-time-container{
+    background: none;
+  }
+}
+@media screen and (min-width: 768px) {
+.m_practice-time {
+  background: #f8f8f8;
+  padding: 40px 20px;
+}
+}
+
+
 .m_list_box {
   width: 92%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   margin: 40px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+.m_list_box{
+  margin: 40px auto 40px;
+}
+}
+
+@media screen and (min-width: 768px) {
+.m_list_box{
+  flex-direction: row;
+  gap: 24px;
+}
 }
 
 .m_item {
@@ -283,6 +349,12 @@ td {
 
 .m_list_box > a:not(:first-child) {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .m_list_box > a:not(:first-child) {
+    margin-top: 0px;
+  }
 }
 
 .m_btn {
@@ -307,11 +379,19 @@ td {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .u_picture_relative{
+    overflow: visible;
+  }
+}
+
 .u_picture_relative02 {
   position: relative;
 }
 
-.u_circle {
+
+.u_circle-sm {
+  display: none;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -323,6 +403,18 @@ td {
   z-index: -1;
 }
 
+  @media screen and (min-width: 768px) {
+  .u_circle{
+    display: none;
+  }
+  }
+  @media screen and (min-width: 768px) {
+  .u_circle-sm{
+    display: inline;
+  }
+  }
+
+
 .u_flower {
   margin: 0;
   position: absolute;
@@ -333,6 +425,11 @@ td {
   z-index: -1;
 }
 
+@media screen and (min-width: 768px) {
+.u_flower{
+  right: -20%;
+  }
+  
 .u_flower_center {
   display: block;
   width: 150px;
@@ -388,16 +485,6 @@ td {
   border-radius: 18% 82% 5% 95% / 17% 94% 6% 83%;
   z-index: -2;
 }
-
-.u_flower_stem {
-  display: block;
-  position: absolute;
-  bottom: -75%;
-  right: 0%;
-  width: 4%;
-  height: 100%;
-  background: rgba(95, 172, 83, 0.73);
-  z-index: -2;
 }
 
 .u_background-line {
@@ -417,7 +504,12 @@ td {
   position: absolute;
   top: 16%;
   left: 50%;
-  transform: translate(-50%, -50%) skewY(46deg);
+  transform: translate(-50%, -50%) skewY(-45deg);
+}
+@media screen and (min-width: 768px) {
+.u_background-line01{
+  transform: translate(-50%, -50%) skewY(-20deg);
+}
 }
 
 .u_background-line02 {
@@ -427,8 +519,10 @@ td {
   position: absolute;
   top: 16%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(50deg);
+  transform: translate(-50%, -50%) skewY(46deg);
 }
+
+
 
 .u_background-line03 {
   display: block;
@@ -439,6 +533,12 @@ td {
   left: 50%;
   transform: translate(-50%, -50%) skewY(46deg);
 }
+
+@media screen and (min-width: 768px) {
+  .u_background-line03{
+    transform: translate(-50%, -50%) skewY(20deg);
+  }
+  }
 
 .u_content_line {
   position: absolute;
